@@ -1,7 +1,7 @@
 import logo from "../assets/logo.svg";
 import { hamburger } from "../assets/icons/index";
 import PhoneEnabledRoundedIcon from "@mui/icons-material/PhoneEnabledRounded";
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import { NavLink } from "react-router-dom";
 const Nav = () => {
   return (
     <nav className="absolute z-10 flex w-full place-items-center justify-between px-16 font-montserrat text-white  lg:gap-[2.9rem] xl:gap-14">
@@ -17,7 +17,9 @@ const Nav = () => {
           <a>HOME</a>
         </li>
         <li>
-          <a>GARRAGE</a>
+          <NavLink to="/garage" preventScrollReset={true}>
+            GARAGE
+          </NavLink>
         </li>
         <li>
           <a>ABOUT US</a>

@@ -1,7 +1,11 @@
 import { SuvIcon, SedanIcon, SportsCarIcon } from "../assets/icons/index";
 import { cars } from "../constants/index";
 import CarCard from "./CarCard";
+import CarCardHomePage from "../components/CarCardHomePage";
 import CarIcon from "./CarIcon";
+import CarSortBar from "../utils/CarSortBar";
+import Button from "../utils/Button";
+import { NavLink } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
@@ -12,27 +16,15 @@ import "swiper/css/scrollbar";
 
 const TodaysSpecialBar = () => {
   return (
-    <section className=" ">
-      <div className="max-lg:flex-col flex items-center justify-center">
-        <h2 className="max-xl:text-lg  max-lg:w-full max-lg:text-[60px] max-md:text-[46px] max-sm:text-[32px] max-lg:leading-[90px]  max-lg:text-center flex-1 text-2xl font-bold ">
+    <section className=" max-container ">
+      <div className="flex items-center justify-center max-lg:flex-col">
+        <h2 className="flex-1  text-2xl font-bold max-xl:text-lg max-lg:w-full max-lg:text-center  max-lg:text-[60px] max-lg:leading-[90px] max-md:text-[46px] max-sm:text-[32px] ">
           TODAYS SPECIALS
         </h2>
-        <ul className="max-xl:gap-5 max-lg:text-sm max-lg:w-full max-lg:justify-evenly max-lg:gap-20 max-sm:gap-10 flex lg:mr-10">
-          <CarIcon carIcon={SuvIcon} carType="SUV" link="https://google.com" />
-          <CarIcon
-            carIcon={SedanIcon}
-            carType="LUXURY"
-            link="https://google.com"
-          />
-          <CarIcon
-            carIcon={SportsCarIcon}
-            carType="SPORTSCAR"
-            link="https://google.com"
-          />
-        </ul>
-        <div className="max-lg:w-[80%] grid h-[50px] place-items-center border-2 border-solid border-orange-box px-10">
-          <h2>VIEW ALL CARS</h2>
-        </div>
+        <CarSortBar />
+        <NavLink to="/garage">
+          <Button label="VIEW ALL CARS" />
+        </NavLink>
       </div>
       <div className=" mt-[100px] flex lg:mt-[200px] ">
         <Swiper
@@ -61,10 +53,9 @@ const TodaysSpecialBar = () => {
         >
           {cars.map((car) => (
             <SwiperSlide>
-              <CarCard key={car.thumbnail} {...car} />
+              <CarCardHomePage key={car.thumbnail} {...car} />
             </SwiperSlide>
           ))}
-          ...
         </Swiper>
       </div>
     </section>

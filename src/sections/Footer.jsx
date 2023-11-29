@@ -6,18 +6,21 @@ const Footer = () => {
   const currentYear = currentDate.getFullYear();
 
   return (
-    <footer className="relative font-montserrat">
-      <div className=" max-lg:flex-col relative z-10 flex flex-wrap  justify-between gap-20 ">
-        <div className="flex flex-col justify-center p-5">
+    <footer className="relative font-montserrat max-sm:text-sm">
+      <div className=" relative z-10 flex flex-wrap justify-between gap-20 max-lg:flex-col ">
+        <div className="flex flex-1 flex-col">
           <div className="flex items-center">
             <img src={logo} width={100} />
-            <p className="p-5 text-4xl">Rentz</p>
+            <p className="max-sm:text-2x  text-4xl font-bold text-orange-box">
+              Rentz
+            </p>
           </div>
-          <div className="mt-5">
+          <div className="mt-5 ">
             <p>Unleash the Road Ahead with Premium Car Rentals</p>
             <p>
               Indulge in Elegance, Drive with Prestige: Your Luxurious Adventure
-              Awaits with Rentz.
+              Awaits with{" "}
+              <span className="font-bold text-orange-box">Rentz</span>.
             </p>
           </div>
           <div className="mt-8 flex items-center gap-5">
@@ -32,10 +35,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-1 flex-wrap justify-between gap-20 p-5">
-          {/* <div className="flex gap-20 p-5"> */}
+        <div className="flex flex-1 flex-wrap justify-between gap-20 max-sm:text-sm lg:gap-10">
           <div className="">
-            <p className=" text-2xl">Vehicles</p>
+            <p className=" text-2xl max-sm:text-xl">Vehicles</p>
             <div className=" flex flex-col gap-5 pt-5">
               <p>SUV</p>
               <p>LUXURY</p>
@@ -43,7 +45,17 @@ const Footer = () => {
             </div>
           </div>
           <div className="">
-            <p>Help</p>
+            <p className=" text-2xl max-sm:text-xl ">Promos</p>
+            <div className="mt-5 flex flex-col gap-5">
+              <p>Holiday Promos</p>
+              <p>Vip Promos</p>
+              <p>----------</p>
+              <p>----------</p>
+              <p>----------</p>
+            </div>
+          </div>
+          <div className="">
+            <p className=" text-2xl max-sm:text-xl">Help</p>
             <div className="mt-5 flex flex-col gap-5">
               <p>About us</p>
               <p>FAQs</p>
@@ -53,7 +65,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="">
-            <p>Get in touch</p>
+            <p className=" text-2xl max-sm:text-xl">Get in touch</p>
             <div className="mt-5 flex flex-col gap-5">
               <p>lux@rentz.com</p>
               <p>+63 999 999 999</p>
@@ -62,14 +74,9 @@ const Footer = () => {
         </div>
         {/* </div> */}
       </div>
-      <div className="  mt-24 p-5 text-2xl">
+      <div className=" text-2xl max-sm:text-xl">
         <p>&copy; {currentYear} Rentz</p>
       </div>
-      {/* <div className=" absolute bottom-0 left-0 right-0 top-0 flex h-full items-center justify-center  text-black">
-        <p className="relative text-[340px] font-bold leading-[1.15]">
-          CONTACTS
-        </p>
-      </div> */}
     </footer>
   );
 };

@@ -5,31 +5,28 @@ import Services from "./sections/Services";
 import Features from "./sections/features";
 import SpecialOffer from "./sections/SpecialOffer";
 import Footer from "./sections/Footer";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import Catalogue from "./pages/catalogue";
+import CarDetails from "./pages/CarDetails";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/garage",
+    element: <Catalogue />,
+  },
+  {
+    path: "/garage/:carId",
+    element: <CarDetails />,
+  },
+]);
 
 function App() {
-  return (
-    <main className="relative">
-      <Nav />
-      <section className="xl:padding-l xl:padding-r  padding-b">
-        <Hero />
-      </section>
-      <section className="padding ">
-        <TodaysSpecials />
-      </section>
-      <section className="padding">
-        <Services />
-      </section>
-      <section className="padding text-white">
-        <Features />
-      </section>
-      <section className="padding  text-white">
-        <SpecialOffer />
-      </section>
-      <section className="padding-x padding-t pb-8 text-white">
-        <Footer />
-      </section>
-    </main>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

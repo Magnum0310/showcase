@@ -14,7 +14,7 @@ const CarCard = ({ thumbnail, type, price, carId }) => {
         <p className=" text-slate-gray">
           <span className="font-bold text-orange-box">{price}</span> / Per Day
         </p>
-        <NavLink to={`${carId}`}>
+        <NavLink to={"garage/" + `${carId}`}>
           <button className="font-bold text-orange-box">
             DRIVE NOW <TrendingFlatOutlinedIcon />
           </button>

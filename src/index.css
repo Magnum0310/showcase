@@ -15,6 +15,15 @@ body {
   background-color: #1c1c1cff;
 }
 
+.swiper-pagination-bullet {
+  background-color: #e39101ff;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #e39101ff;
+}
+
 @layer components {
   .max-container {
     max-width: 1440px;

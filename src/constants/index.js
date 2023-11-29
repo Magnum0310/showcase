@@ -3,46 +3,37 @@ import { speed, location, home } from "../assets/icons";
 
 export const cars = [
   {
+    carId: "Audi Coupe A5",
     thumbnail: audiCoupe,
     type: "Audi Coupe A5",
     price: 500,
   },
   {
+    carId: "Toyota GR86",
     thumbnail: gr86,
     type: "Toyota GR86",
     price: 500,
   },
   {
+    carId: "A 180 AMG Line Sedan",
     thumbnail: mercedezSedan,
     type: "A 180 AMG Line Sedan",
     price: 500,
   },
   {
+    carId: "Audi Coupe A5",
     thumbnail: audiCoupe,
     type: "Audi Coupe A5",
     price: 500,
   },
   {
+    carId: "Toyota GR86",
     thumbnail: gr86,
     type: "Toyota GR86",
     price: 500,
   },
   {
-    thumbnail: mercedezSedan,
-    type: "A 180 AMG Line Sedan",
-    price: 500,
-  },
-  {
-    thumbnail: audiCoupe,
-    type: "Audi Coupe A5",
-    price: 500,
-  },
-  {
-    thumbnail: gr86,
-    type: "Toyota GR86",
-    price: 500,
-  },
-  {
+    carId: "A 180 AMG Line Sedan",
     thumbnail: mercedezSedan,
     type: "A 180 AMG Line Sedan",
     price: 500,
@@ -69,5 +60,116 @@ export const features = [
     feature: "VIP Service",
     note: "Elevate your experience with our VIP service. We go the extra mile for your satisfaction.",
     icon: speed,
+  },
+];
+
+export const fleet = [
+  {
+    carId: "Audi Coupe A5",
+    thumbnail: audiCoupe,
+    type: "Audi Coupe A5",
+    price: 500,
+  },
+  {
+    carId: "Toyota GR86",
+    thumbnail: gr86,
+    type: "Toyota GR86",
+    price: 500,
+  },
+  {
+    carId: "A 180 AMG Line Sedan",
+    thumbnail: mercedezSedan,
+    type: "A 180 AMG Line Sedan",
+    price: 500,
+  },
+  {
+    carId: "Audi Coupe A5",
+    thumbnail: audiCoupe,
+    type: "Audi Coupe A5",
+    price: 500,
+  },
+  {
+    carId: "Toyota GR86",
+    thumbnail: gr86,
+    type: "Toyota GR86",
+    price: 500,
+  },
+  {
+    carId: "A 180 AMG Line Sedan",
+    thumbnail: mercedezSedan,
+    type: "A 180 AMG Line Sedan",
+    price: 500,
+  },
+  {
+    carId: "Audi Coupe A5",
+    thumbnail: audiCoupe,
+    type: "Audi Coupe A5",
+    price: 500,
+  },
+  {
+    carId: "Toyota GR86",
+    thumbnail: gr86,
+    type: "Toyota GR86",
+    price: 500,
+  },
+  {
+    carId: "A 180 AMG Line Sedan",
+    thumbnail: mercedezSedan,
+    type: "A 180 AMG Line Sedan",
+    price: 500,
+  },
+  {
+    carId: "Audi Coupe A5",
+    thumbnail: audiCoupe,
+    type: "Audi Coupe A5",
+    price: 500,
+  },
+  {
+    carId: "Toyota GR86",
+    thumbnail: gr86,
+    type: "Toyota GR86",
+    price: 500,
+  },
+  {
+    carId: "A 180 AMG Line Sedan",
+    thumbnail: mercedezSedan,
+    type: "A 180 AMG Line Sedan",
+    price: 500,
+  },
+  {
+    carId: "Audi Coupe A5",
+    thumbnail: audiCoupe,
+    type: "Audi Coupe A5",
+    price: 500,
+  },
+  {
+    carId: "Toyota GR86",
+    thumbnail: gr86,
+    type: "Toyota GR86",
+    price: 500,
+  },
+  {
+    carId: "A 180 AMG Line Sedan",
+    thumbnail: mercedezSedan,
+    type: "A 180 AMG Line Sedan",
+    price: 500,
+  },
+  {
+    carId: "Audi Coupe A5",
+    thumbnail: audiCoupe,
+    type: "Audi Coupe A5",
+    price: 500,
+  },
+  {
+    carId: "Toyota GR86",
+    thumbnail: gr86,
+    type: "Toyota GR86",
+    price: 500,
+  },
+  {
+    carId: "A 180 AMG Line Sedan",
+    thumbnail: mercedezSedan,
+    type: "A 180 AMG Line Sedan",
+    price: 500,
   },
 ];

@@ -14,27 +14,27 @@ const Hero = () => {
         <div className="absolute top-72 ml-12 hidden justify-center xl:block">
           <SocialBar />
         </div>
-        <h1 className=" max-xl:mt-40 max-xl:leading-[80px] max-sm:padding max-sm:text-[75px] relative z-10 mt-32 overflow-visible pr-10 font-montserrat font-bold leading-[100px] sm:ml-[32px] sm:text-[75px] md:ml-[70px] xl:ml-[250px] xl:whitespace-nowrap">
+        <h1 className=" max-sm:padding relative z-10 mt-32 overflow-visible pr-10 font-montserrat font-bold leading-[100px] max-xl:mt-40 max-xl:leading-[80px] max-sm:text-[75px] sm:ml-[32px] sm:text-[75px] md:ml-[70px] xl:ml-[250px] xl:whitespace-nowrap">
           Your Journey,
           <br />
           <span>Your Car</span>
         </h1>
-        <h3 className="  max-sm:ml-[32px] max-sm:text-sm mb-6 mt-10 text-lg leading-7 text-slate-gray sm:ml-[32px] sm:max-w-sm md:ml-[70px] xl:ml-[250px]">
+        <h3 className="  mb-6 mt-10 text-lg leading-7 text-slate-gray max-sm:ml-[32px] max-sm:text-sm sm:ml-[32px] sm:max-w-sm md:ml-[70px] xl:ml-[250px]">
           Unleash the Road Ahead with Premium Car Rentals
         </h3>
-        <div className=" max-sm:ml-[32px] max-sm:text-sm mb-6 mt-5 leading-[60px] sm:ml-[32px] md:ml-[70px] xl:ml-[250px]">
-          <p className="max-sm:text-sm text-lg font-bold">
+        <div className=" mb-6 mt-5 leading-[60px] max-sm:ml-[32px] max-sm:text-sm sm:ml-[32px] md:ml-[70px] xl:ml-[250px]">
+          <p className="text-lg font-bold max-sm:text-sm">
             THE BLACK AUDI Coupe
           </p>
           <span className=" text-orange-box">P Price</span> /{" "}
           <span className="text-slate-gray">Per Day</span>
         </div>
-        <div className=" max-sm:ml-[32px] max-sm:text-sm mt-5 grid h-[50px] w-[200px] place-items-center border-2 border-solid border-orange-box text-base font-bold sm:ml-[32px] md:ml-[70px] xl:ml-[250px]">
+        <div className=" mt-5 grid h-[50px] w-[200px] place-items-center border-2 border-solid border-orange-box text-base font-bold max-sm:ml-[32px] max-sm:text-sm sm:ml-[32px] md:ml-[70px] xl:ml-[250px]">
           <p>Drive Now</p>
         </div>
       </div>
 
-      <div className=" max-sm:mx-[32px] max-lg:mx-[64px] relative flex justify-center sm:ml-[32px] md:mx-[70px] xl:min-h-screen">
+      <div className=" relative flex justify-center max-lg:mx-[64px] max-sm:mx-[32px] sm:ml-[32px] md:mx-[70px] xl:min-h-screen">
         <img
           src={audiHigh}
           width={1200}

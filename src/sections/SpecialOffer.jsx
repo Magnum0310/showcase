@@ -1,12 +1,12 @@
 import SpecialOfferCard from "../components/SpecialOfferCard";
 const SpecialOffer = () => {
   return (
-    <div className="flex h-[700px] items-center">
+    <div className="flex items-center max-xl:flex-col-reverse max-sm:text-sm xl:h-[700px]">
       <div className="flex flex-1 justify-center">
         <SpecialOfferCard />
       </div>
       <div className="flex h-[600px] flex-1 items-center justify-center">
-        <div className="p-5 font-montserrat">
+        <div className="m-5 font-montserrat">
           <p className="leading-7">
             <span className=" text-2xl">
               Ready to Experience{" "}
@@ -22,7 +22,7 @@ const SpecialOffer = () => {
             limited-time opportunities and transform your journey into an
             extraordinary escape.
           </p>
-          <div className="h-15 mt-10 flex gap-5">
+          <div className="h-15 mt-10 flex gap-5 max-xl:justify-center">
             <button className=" w-40 bg-orange-box p-3">VIEW DETAILS</button>
             <button className="w-40 border-2 border-solid border-orange-box">
               LEARN MORE
