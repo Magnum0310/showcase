@@ -1,55 +1,117 @@
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
+import { Card, Typography } from "@material-tailwind/react";
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
+// const TABLE_HEAD = ["Name", "Job", "Employed", ""];
 
-const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Gingerbread", 356, 16.0, 49, 3.9),
+const TABLE_HEAD = [];
+
+const TABLE_ROWS = [
+  {
+    name: "Security Deposit",
+    job: "$$$$$",
+  },
+  {
+    name: "Includes",
+    job: "100 miles per day | Extra miles $/mile",
+  },
+  {
+    name: "MSRP",
+    job: "$123,456",
+  },
+  {
+    name: "Top Speed",
+    job: "205 MPH",
+  },
+  {
+    name: "0-60 mph in:",
+    job: "3.4 seconds",
+  },
+  {
+    name: "Transmission",
+    job: "6 Speed Auto",
+  },
+  {
+    name: "Seats",
+    job: "2",
+  },
+  {
+    name: "Engine",
+    job: "6.5L V8",
+  },
 ];
+
 const DataTable = () => {
   return (
-    <>
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell>Dessert (100g serving)</TableCell>
-              <TableCell align="right">Calories</TableCell>
-              <TableCell align="right">Fat&nbsp;(g)</TableCell>
-              <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-              <TableCell align="right">Protein&nbsp;(g)</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
-              <TableRow
-                key={row.name}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+    <Card className="h-full w-full">
+      <table className="w-full min-w-max table-auto text-left">
+        <thead>
+          <tr>
+            {TABLE_HEAD.map((head) => (
+              <th
+                key={head}
+                className="border-blue-gray-100 bg-blue-gray-50 border-b p-4"
               >
-                <TableCell component="th" scope="row">
-                  {row.name}
-                </TableCell>
-                <TableCell align="right">{row.calories}</TableCell>
-                <TableCell align="right">{row.fat}</TableCell>
-                <TableCell align="right">{row.carbs}</TableCell>
-                <TableCell align="right">{row.protein}</TableCell>
-              </TableRow>
+                <Typography
+                  variant="small"
+                  color="blue-gray"
+                  className="font-normal leading-none opacity-70"
+                >
+                  {head}
+                </Typography>
+              </th>
             ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-    </>
+          </tr>
+        </thead>
+        <tbody>
+          {TABLE_ROWS.map(({ name, job, date }, index) => {
+            const isLast = index === TABLE_ROWS.length - 1;
+            const classes = isLast ? "py-4" : "py-2  border-blue-gray-50";
+
+            return (
+              <tr key={name}>
+                <td className={classes}>
+                  <Typography
+                    variant="small"
+                    color="blue-gray"
+                    className="text-text-gray text-lg font-bold"
+                  >
+                    {name}
+                  </Typography>
+                </td>
+                <td className={classes}>
+                  <Typography
+                    variant="small"
+                    color="blue-gray"
+                    className="text-base font-bold text-white"
+                  >
+                    {job}
+                  </Typography>
+                </td>
+                {/* <td className={classes}>
+                  <Typography
+                    variant="small"
+                    color="blue-gray"
+                    className="font-normal"
+                  >
+                    {date}
+                  </Typography>
+                </td> */}
+                {/* <td className={classes}>
+                  <Typography
+                    as="a"
+                    href="#"
+                    variant="small"
+                    color="blue-gray"
+                    className="font-medium"
+                  >
+                    Edit
+                  </Typography>
+                </td> */}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </Card>
   );
 };
 

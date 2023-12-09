@@ -24,6 +24,7 @@ const config = {
         primary: "#ECEEFF",
         "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
+        "text-gray": "#808080",
         "orange-box": "#e39101ff",
         "white-400": "rgba(255, 255, 255, 0.80)",
       },

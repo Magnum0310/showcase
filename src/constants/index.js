@@ -173,3 +173,38 @@ export const fleet = [
     price: 500,
   },
 ];
+
+export const details = [
+  {
+    name: "Security Deposit",
+    job: "$$$$$",
+  },
+  {
+    name: "Includes",
+    job: "100 miles per day | Extra miles $/mile",
+  },
+  {
+    name: "MSRP",
+    job: "$123,456",
+  },
+  {
+    name: "Top Speed",
+    job: "205 MPH",
+  },
+  {
+    name: "0-60 mph in:",
+    job: "3.4 seconds",
+  },
+  {
+    name: "Transmission",
+    job: "6 Speed Auto",
+  },
+  {
+    name: "Seats",
+    job: "2",
+  },
+  {
+    name: "Engine",
+    job: "6.5L V8",
+  },
+];

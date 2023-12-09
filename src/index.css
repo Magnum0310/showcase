@@ -24,6 +24,10 @@ body {
   color: #e39101ff;
 }
 
+::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(100%);
+}
+
 @layer components {
   .max-container {
     max-width: 1440px;
